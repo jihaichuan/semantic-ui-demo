@@ -2,12 +2,61 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Container 学习</title>
+        <title>Container 容器</title>
         <link rel="stylesheet" href="semantic/dist/semantic.css" />
         <link rel="stylesheet" href="css/container.css" />
     </head>
     <body>
-        
+        <div class="ui container body">
+            <h2 class="ui header dividing">等宽的容器</h2>
+            <div class="ui four column doubling stackable grid container">
+                <div class="red column">
+                    <p>1</p>
+                    <p>2</p>
+                </div>
+                <div class="orange column">
+                    <p>3</p>
+                    <p>4</p>
+                </div>
+                <div class="yellow column">
+                    <p>5</p>
+                    <p>6</p>
+                </div>
+                <div class="teal column">
+                    <p>7</p>
+                    <p>8</p>
+                </div>
+            </div>
+
+            <h2 class="ui header dividing">居住菜单</h2>
+            <div class="ui attached stackable menu">
+                <div class="ui container">
+                    <a href="" class="item"><i class="home icon"></i>首页</a>
+                    <a href="" class="item"><i class="grid layout icon"></i>浏览器</a>
+                    <a href="" class="item"><i class="mail icon"></i>邮件</a>
+                    <div class="ui simple dropdown item">
+                        更多
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a href="" class="item"><i class="edit icon"></i>编辑资料</a>
+                            <a href="" class="item"><i class="globe icon"></i>选择语言</a>
+                            <a href="" class="item"><i class="setting icon"></i>设置账号</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right item">
+                    <div class="ui input">
+                        <input type="text" placeholder="Search..">
+                    </div>
+                </div>
+            </div>
+            <div class="ui raised very padded text container segment">
+                <h2 class="ui header">Dogs Roles with Humans</h2>
+                <p>Domestic dogs inherited complex behaviors, such as bite inhibition, from their wolf ancestors, which would have been pack hunters with complex body language. These sophisticated forms of social cognition and communication may account for their trainability, playfulness, and ability to fit into human households and social situations, and these attributes have given dogs a relationship with humans that has enabled them to become one of the most successful species on the planet today.</p>
+                <p>The dogs' value to early human hunter-gatherers led to them quickly becoming ubiquitous across world cultures. Dogs perform many roles for people, such as hunting, herding, pulling loads, protection, assisting police and military, companionship, and, more recently, aiding handicapped individuals. This impact on human society has given them the nickname "man's best friend" in the Western world. In some cultures, however, dogs are also a source of meat.</p>
+            </div>
+        </div>
+
         <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
         <script type="text/javascript" src="semantic/dist/semantic.js"></script>
         <script type="text/javascript" src="js/container.js"></script>
