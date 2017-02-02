@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-hans">
+    <meta charset="UTF-8">
+    <title>Input输入框</title>
+    <link rel="stylesheet" href="semantic/dist/semantic.css" />
+    <link rel="stylesheet" href="css/input.css" />
+</head>
+<body>
+<div class="ui container">
+
+    <h2 class="ui header dividing">简单的输入框</h2>
+    <div class="ui input">
+        <input type="text" placeholder="Search" />
+    </div>
+
+    <h2 class="ui header dividing">默认焦点的状态</h2>
+    <div class="ui focus input">
+        <input type="text" placeholder="Search"/>
+    </div>
+
+    <h2 class="ui header dividing">加载中的搜索框</h2>
+    <div class="ui left icon loading input">
+        <input type="text" placeholder="Search" />
+        <i class="search icon"></i>
+    </div>
+    <div class="ui icon loading focus input">
+        <input type="text" placeholder="Search" />
+        <i class="search icon"></i>
+    </div>
+
+    <h2 class="ui header dividing">禁用状态的搜索框</h2>
+    <div class="ui disabled input">
+        <input type="text" placeholder="Search" />
+    </div>
+    <div class="ui disabled icon input">
+        <input type="text" placeholder="Search" />
+        <i class="search icon"></i>
+    </div>
+    <div class="ui input">
+        <input type="text" placeholder="Search" disabled="true" />
+    </div>
+
+    <h2 class="ui header dividing">错误样式的搜索框</h2>
+    <div class="ui input error">
+        <input type="text" placeholder="Search..." />
+    </div>
+
+    <h2 class="ui header dividing">带图标的输入框</h2>
+    <div class="ui left icon input">
+        <input type="text" placeholder="Search users" />
+        <i class="users icon"></i>
+    </div>
+    <div class="ui icon input">
+        <input type="text" placeholder="Search Name" />
+        <i class="search link circular icon"></i>
+    </div>
+    <div class="ui icon input">
+        <input type="text" placeholder="search sex" />
+        <i class="search link circular icon inverted"></i>
+    </div>
+
+    <h2 class="ui header dividing">标签输入框</h2>
+    <div class="ui labeled input">
+        <div class="ui label">http://</div>
+        <input type="text" placeholder="xiaocx.org" />
+    </div>
+    <div class="ui right labeled input">
+        <input type="text" placeholder="Find domin" />
+        <div class="ui dropdown label">
+            <div class="text">.com</div>
+            <i class="dropdown icon"></i>
+            <div class="menu">
+                <div class="item">.com</div>
+                <div class="item">.net</div>
+                <div class="item">.org</div>
+            </div>
+        </div>
+    </div>
+    <div class="ui right labeled input">
+        <input type="text" placeholder="你的体重" />
+        <div class="ui basic label">kg</div>
+    </div>
+    <div class="ui right labeled input">
+        <div class="ui label">￥</div>
+        <input type="text" placeholder="请输入的月收入" />
+        <div class="ui basic label">.00</div>
+    </div>
+    <p></p>
+    <div class="ui right labeled left icon input">
+        <i class="tags icon"></i>
+        <input type="text" placeholder="" />
+        <a href="###" class="ui tag blue label">添加标签</a>
+    </div>
+    <div class="ui left corner labeled big input">
+        <input type="text" placeholder="Title" />
+        <div class="ui left corner label">
+            <i class="asterisk icon"></i>
+        </div>
+    </div>
+    <div class="ui corner labeled big input">
+        <input type="text" placeholder="Title" />
+        <div class="ui corner label">
+            <i class="asterisk icon"></i>
+        </div>
+    </div>
+
+    <h2 class="ui header dividing">输入框的动作</h2>
+    <div class="ui action input">
+        <input type="text" placeholder="输入你的姓名" />
+        <button class="ui blue button">确定</button>
+    </div>
+    <div class="ui left action input">
+        <button class="ui teal labeled icon button">
+            <i class="cart icon"></i>Checkout
+        </button>
+        <input type="text" placeholder="请输入价格" value="" />
+    </div>
+    <div class="ui right action left icon input">
+        <i class="search icon"></i>
+        <input type="text" placeholder="搜索" />
+        <div class="ui basic floating dropdown button">
+            <div class="text">请选择</div>
+            <i class="dropdown icon"></i>
+            <div class="ui menu">
+                <div class="item">文档</div>
+                <div class="item">视频</div>
+                <div class="item">音乐</div>
+            </div>
+        </div>
+    </div>
+    <p></p>
+    <div class="ui action input">
+        <input type="text" placeholder="搜索" />
+        <select name="" id="" class="ui compact selection dropdown">
+            <option value="all">All</option>
+            <option selected="true" value="articles">Articles</option>
+            <option value="products">Products</option>
+        </select>
+        <div class="ui button" type="submit">搜索</div>
+    </div>
+    <div class="ui action input">
+        <input type="text" value="https://www.xiaocx.org" placeholder="search..." />
+        <button class="ui teal right labeled icon button"><i class="copy icon"></i>复制</button>
+    </div>
+    <div class="ui action input">
+        <input type="text" placeholder="search.." />
+        <button class="ui icon button">
+            <i class="search icon"></i>
+        </button>
+    </div>
+
+    <h2 class="ui header dividing">透明的输入框</h2>
+    <div class="ui transparent input">
+        <input type="text" placeholder="Search..">
+    </div>
+    <div class="ui transparent icon input">
+        <input type="text" placeholder="Search..">
+        <i class="search link icon"></i>
+    </div>
+    <div class="ui transparent left icon input">
+        <input type="text" placeholder="Search.." />
+        <i class="search link icon"></i>
+    </div>
+
+    <h2 class="ui header dividing">反转样式的输入框</h2>
+    <div class="ui inverted segment">
+        <div class="ui inverted input">
+            <input type="text" placeholder="Search.." />
+        </div>
+        <div class="ui inverted divider"></div>
+        <div class="ui left icon inverted input">
+            <input type="text" placeholder="Search.." />
+            <i class="search link icon"></i>
+        </div>
+        <div class="ui inverted divider"></div>
+        <div class="ui inverted transparent input">
+            <input type="text" placeholder="Search.." />
+            <i class="search link icon"></i>
+        </div>
+    </div>
+
+    <h2 class="ui header dividing">通栏的输入框</h2>
+    <div class="ui fluid icon input">
+        <input type="text" placeholder="Search.." />
+        <i class="search link icon"></i>
+    </div>
+    <div class="ui divider"></div>
+    <div class="ui fluid action input">
+        <input type="text" placeholder="Search.." />
+        <button class="ui button">搜索</button>
+    </div>
+
+    <h2 class="ui header dividing">不同大小的输入框</h2>
+    <div class="ui mini icon input">
+        <input type="text" placeholder="Search mini">
+        <i class="search link icon"></i>
+    </div>
+    <div class="ui small icon input">
+        <input type="text" placeholder="Search small">
+        <i class="search link icon"></i>
+    </div>
+    <div class="ui large icon input">
+        <input type="text" placeholder="Search large">
+        <i class="search link icon"></i>
+    </div>
+    <div class="ui huge icon input">
+        <input type="text" placeholder="Search huge">
+        <i class="search link icon"></i>
+    </div>
+    <div class="ui massive icon input">
+        <input type="text" placeholder="Search huge">
+        <i class="search link icon"></i>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="semantic/dist/semantic.js"></script>
+<script type="text/javascript" src="js/input.js"></script>
+</body>
+</html>
