@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Reveal 揭示效果</title>
+        <link rel="stylesheet" href="semantic/dist/semantic.css" />
+        <link rel="stylesheet" href="css/reveal.css" />
+    </head>
+    <body>
+        <div class="ui container">
+            <h2 class="ui header dividing">fade 淡入淡出</h2>
+
+            <div class="ui horizontal divider">占据通栏的元素，鼠标移动到这栏上就会显示隐藏元素</div>
+            <div class="ui fade reveal">
+                <div class="visible content">
+                    <img src="http://www.semantic-ui.cn/images/wireframe/square-image.png" alt="" class="ui small image">
+                </div>
+                <div class="hidden content">
+                    <img src="http://www.semantic-ui.cn/images/avatar/large/ade.jpg" alt="" class="ui small image">
+                </div>
+            </div>
+
+            <div class="ui horizontal divider">鼠标移动到图片上才显示隐藏的元素</div>
+            <div class="ui small fade reveal image">
+                <img src="http://www.semantic-ui.cn/images/wireframe/square-image.png" alt="" class="visible content">
+                <img src="http://www.semantic-ui.cn/images/avatar/large/ade.jpg" alt="" class="hidden content">
+            </div>
+
+            <h2 class="ui header dividing">move 移动效果</h2>
+
+            <div class="ui horizontal divider">默认，向左移动，显示方式的内容</div>
+            <div class="ui move reveal">
+                <div class="visible content">
+                    <img src="http://www.semantic-ui.cn/images/wireframe/square-image.png" alt="" class="ui small image">
+                </div>
+                <div class="hidden content">
+                    <img src="http://www.semantic-ui.cn/images/avatar/large/ade.jpg" alt="" class="ui small image">
+                </div>
+            </div>
+
+            <div class="ui horizontal divider">right 向右移动，显示隐藏的元素</div>
+            <div class="ui move right reveal">
+                <div class="visible content">
+                    <img src="http://www.semantic-ui.cn/images/wireframe/square-image.png" alt="" class="ui small image">
+                </div>
+                <div class="ui hidden content">
+                    <img src="http://www.semantic-ui.cn/images/avatar/large/ade.jpg" alt="" class="ui small image">
+                </div>
+            </div>
+
+            <div class="ui horizontal divider">up 向上移动，显示隐藏的元素</div>
+            <div class="ui move up reveal">
+                <div class="visible content">
+                    <img src="http://www.semantic-ui.cn/images/wireframe/square-image.png" alt="" class="ui small image">
+                </div>
+                <div class="hidden content">
+                    <img src="http://www.semantic-ui.cn/images/avatar/large/ade.jpg" alt="" class="ui small image">
+                </div>
+            </div>
+            <div class="ui horizontal divider">down 向下移动，显示隐藏的元素</div>
+            <div class="ui move down reveal">
+                <div class="visible content">
+                    <img src="http://www.semantic-ui.cn/images/wireframe/square-image.png" alt="" class="ui large image">
+                </div>
+                <div class="hidden content">
+                    <img src="http://www.semantic-ui.cn/images/avatar/large/ade.jpg" alt="" class="ui large image">
+                </div>
+            </div>
+
+            <h2 class="ui header dividing">Rotate 旋转显示揭示</h2>
+            <div class="ui horizontal divider">向右 Routate 的效果</div>
+            <div class="ui small circular rotate reveal image">
+                <img src="http://www.semantic-ui.cn/images/wireframe/square-image.png" alt="" class="visible content">
+                <img src="http://www.semantic-ui.cn/images/avatar/large/ade.jpg" alt="" class="hidden content">
+            </div>
+
+            <div class="ui horizontal divider">向左旋转显示的效果</div>
+            <div class="ui small circular rotate left reveal image">
+                <img src="http://www.semantic-ui.cn/images/wireframe/square-image.png" alt="" class="visible content">
+                <img src="http://www.semantic-ui.cn/images/avatar/large/ade.jpg" alt="" class="hidden content">
+            </div>
+
+            <h2 class="ui header dividing">states 不同状态的情况</h2>
+
+            <div class="ui horizontal divider">active 激活的状态</div>
+            <div class="ui small fade active reveal image">
+                <img src="http://www.semantic-ui.cn/images/wireframe/square-image.png" alt="" class="visible content">
+                <img src="http://www.semantic-ui.cn/images/avatar/large/ade.jpg" alt="" class="hidden content">
+            </div>
+
+            <div class="ui horizontal divider">instant 立刻显示状态</div>
+            <div class="ui instant move left reveal">
+                <div class="visible content">
+                    <img src="http://www.semantic-ui.cn/images/wireframe/square-image.png" alt="" class="ui small image">
+                </div>
+                <div class="hidden content">
+                    <img src="http://www.semantic-ui.cn/images/avatar/large/ade.jpg" alt="" class="ui small image">
+                </div>
+            </div>
+
+            <h2 class="ui header dividing">禁用状态的效果</h2>
+            <div class="ui disabled move left reveal">
+                <div class="visible content">
+                    <img src="http://www.semantic-ui.cn/images/wireframe/square-image.png" alt="" class="ui small image">
+                </div>
+                <div class="hidden content">
+                    <img src="http://www.semantic-ui.cn/images/avatar/large/ade.jpg" alt="" class="ui small image">
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+        <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+    </body>
+</html>
