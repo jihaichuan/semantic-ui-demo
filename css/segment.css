@@ -1,0 +1,8 @@
+.ui.container {
+    padding : 50px;
+    min-height: 3000px;
+}
+.ui.circular {
+    width: 175px;
+    height: 175px;
+}
