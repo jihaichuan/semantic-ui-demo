@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>step 布置</title>
+        <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css" />
+        <link rel="stylesheet" href="css/step.css" />
+    </head>
+    <body>
+
+        <div class="ui container">
+
+            <h2 class="ui header dividing">基本的用法</h2>
+            <div class="ui segment">
+                <div class="ui horizontal divider">基础用法</div>
+                <div class="ui steps">
+                    <div class="step">填写信息</div>
+                    <div class="step">发送邮件</div>
+                    <div class="step">认证完成</div>
+                </div>
+            </div>
+
+            <h2 class="ui header dividing">steps 组</h2>
+            <div class="ui fluid steps">
+                <div class="step">
+                    <i class="truck icon"></i>
+                    <div class="content">
+                        <div class="title">购物车</div>
+                        <div class="description">选择商品加入购物车</div>
+                    </div>
+                </div>
+                <div class="active step">
+                    <i class="payment icon"></i>
+                    <div class="content">
+                        <div class="title">支付</div>
+                        <div class="description">选择支付方式</div>
+                    </div>
+                </div>
+                <div class="disabled step">
+                    <i class="info icon"></i>
+                    <div class="content">
+                        <div class="title">清单</div>
+                        <div class="description">订单信息</div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="ui header dividing">ordered 数字下标 步骤</h2>
+            <div class="ui fluid ordered steps">
+                <div class="completed step">
+                    <div class="content">
+                        <div class="title">购物车</div>
+                        <div class="description">选择商品加入购物车</div>
+                    </div>
+                </div>
+                <div class="active step">
+                    <div class="content">
+                        <div class="title">支付</div>
+                        <div class="description">选择支付方式</div>
+                    </div>
+                </div>
+                <div class="disabled step">
+                    <div class="content">
+                        <div class="title">清单</div>
+                        <div class="description">购买的订单信息内容</div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="ui header dividing">树形排序的列表</h2>
+            <div class="ui vertical steps">
+                <div class="completed step">
+                    <i class="truck icon"></i>
+                    <div class="content">
+                        <div class="title">购物车</div>
+                        <div class="description">选择商品加入购物车</div>
+                    </div>
+                </div>
+                <div class="active step">
+                    <i class="credit card icon"></i>
+                    <div class="content">
+                        <div class="title">支付</div>
+                        <div class="description">选择支付方式</div>
+                    </div>
+                </div>
+                <div class="disabled step">
+                    <i class="info icon"></i>
+                    <div class="content">
+                        <div class="title">清单</div>
+                        <div class="description">购买的订单信息内容</div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="ui header dividing">链接的步骤</h2>
+            <div class="ui steps">
+                <a href="" class="completed step">
+                    <i class="truck icon"></i>
+                    <div class="content">
+                        <div class="title">购物车</div>
+                        <div class="description">Choose your shipping options</div>
+                    </div>
+                </a>
+                <a class="active step">
+                    <i class="credit card icon"></i>
+                    <div class="content">
+                        <div class="title">支付</div>
+                        <div class="description">选择支付方式</div>
+                    </div>
+                </a>
+                <a class="step">
+                    <i class="info icon"></i>
+                    <div class="content">
+                        <div class="title">清单</div>
+                        <div class="description">购买的订单信息内容</div>
+                    </div>
+                </a>
+            </div>
+
+            <h2 class="ui header dividing">较小的空间下展示</h2>
+            <div class="ui tablet stackable steps">
+                <div class="completed step">
+                    <i class="plane circular icon"></i>
+                    <div class="content">
+                        <div class="title">购物</div>
+                        <div class="description">选择购买商品</div>
+                    </div>
+                </div>
+                <div class="active step">
+                    <i class="dollar circular icon"></i>
+                    <div class="content">
+                        <div class="title">支付</div>
+                        <div class="description">选择支付方式</div>
+                    </div>
+                </div>
+                <div class="disable step">
+                    <i class="info circular icon"></i>
+                    <div class="content">
+                        <div class="title">清单</div>
+                        <div class="description">购买的订单信息内容</div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="ui header dividing">通栏</h2>
+            <div class="ui two column grid">
+                <div class="column">
+                    <div class="ui fluid vertical steps">
+                        <div class="completed step">
+                            <i class="truck icon"></i>
+                            <div class="content">
+                                <div class="title">购物</div>
+                                <div class="description">选择购买商品</div>
+                            </div>
+                        </div>
+                        <div class="active step">
+                            <i class="dollar icon"></i>
+                            <div class="content">
+                                <div class="title">支付</div>
+                                <div class="description">选择支付方式</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    请选择支付方式
+                </div>
+            </div>
+
+            <h2 class="ui header dividing">attached不同位置的步骤</h2>
+            <div class="ui segment">
+                <div class="ui three top attached steps">
+                    <div class="step">
+                        <i class="truck icon"></i>
+                        <div class="content">
+                            <div class="title">购物</div>
+                            <div class="description">选择购买商品</div>
+                        </div>
+                    </div>
+                    <div class="active step">
+                        <i class="payment icon"></i>
+                        <div class="content">
+                            <div class="title">支付</div>
+                            <div class="description">选择支付方式</div>
+                        </div>
+                    </div>
+                    <div class="disabled step">
+                        <i class="info icon"></i>
+                        <div class="content">
+                            <div class="title">清单</div>
+                            <div class="description">清单详细信息</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui segment attached">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="ui three bottom attached steps">
+                    <div class="step">
+                        <i class="truck icon"></i>
+                        <div class="content">
+                            <div class="title">购物</div>
+                            <div class="description">选择购买商品</div>
+                        </div>
+                    </div>
+                    <div class="active step">
+                        <i class="payment icon"></i>
+                        <div class="content">
+                            <div class="title">支付</div>
+                            <div class="description">选择支付方式</div>
+                        </div>
+                    </div>
+                    <div class="disabled step">
+                        <i class="info icon"></i>
+                        <div class="content">
+                            <div class="title">清单</div>
+                            <div class="description">清单详细信息</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="ui header dividing">不同大小步骤</h2>
+            <div class="ui segment">
+                <div class="ui horizontal divider">mini size steps</div>
+                <div class="ui fluid mini steps">
+                    <div class="step">
+                        <i class="truck icon"></i>
+                        <div class="content">
+                            <div class="title">Shipping</div>
+                            <div class="description">Choose your shipping options</div>
+                        </div>
+                    </div>
+                    <div class="active step">
+                        <i class="payment icon"></i>
+                        <div class="content">
+                            <div class="title">Billing</div>
+                            <div class="description">Enter billing information</div>
+                        </div>
+                    </div>
+                    <div class="disabled step">
+                        <i class="info icon"></i>
+                        <div class="content">
+                            <div class="title">Confirm Order</div>
+                            <div class="description">Verify order details</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui horizontal divider">tiny site steps</div>
+                <div class="ui tiny fluid steps">
+                    <div class="step">
+                        <i class="truck icon"></i>
+                        <div class="content">
+                            <div class="title">Shipping</div>
+                            <div class="description">Choose your shipping options</div>
+                        </div>
+                    </div>
+                    <div class="active step">
+                        <i class="payment icon"></i>
+                        <div class="content">
+                            <div class="title">Billing</div>
+                            <div class="description">Enter billing information</div>
+                        </div>
+                    </div>
+                    <div class="disabled step">
+                        <i class="info icon"></i>
+                        <div class="content">
+                            <div class="title">Confirm Order</div>
+                            <div class="description">Verify order details</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui horizontal divider">small size steps</div>
+                <div class="ui fluid small steps">
+                    <div class="step">
+                        <i class="truck icon"></i>
+                        <div class="content">
+                            <div class="title">Shipping</div>
+                            <div class="description">Choose your shipping options</div>
+                        </div>
+                    </div>
+                    <div class="active step">
+                        <i class="payment icon"></i>
+                        <div class="content">
+                            <div class="title">Billing</div>
+                            <div class="description">Enter billing information</div>
+                        </div>
+                    </div>
+                    <div class="disabled step">
+                        <i class="info icon"></i>
+                        <div class="content">
+                            <div class="title">Confirm Order</div>
+                            <div class="description">Verify order details</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui horizontal divider">large size steps</div>
+                <div class="ui fluid large steps">
+                    <div class="step">
+                        <i class="truck icon"></i>
+                        <div class="content">
+                            <div class="title">Shipping</div>
+                            <div class="description">Choose your shipping options</div>
+                        </div>
+                    </div>
+                    <div class="active step">
+                        <i class="payment icon"></i>
+                        <div class="content">
+                            <div class="title">Billing</div>
+                            <div class="description">Enter billing information</div>
+                        </div>
+                    </div>
+                    <div class="disabled step">
+                        <i class="info icon"></i>
+                        <div class="content">
+                            <div class="title">Confirm Order</div>
+                            <div class="description">Verify order details</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui horizontal divider">big size steps</div>
+                <div class="ui fluid big steps">
+                    <div class="step">
+                        <i class="truck icon"></i>
+                        <div class="content">
+                            <div class="title">Shipping</div>
+                            <div class="description">Choose your shipping options</div>
+                        </div>
+                    </div>
+                    <div class="active step">
+                        <i class="payment icon"></i>
+                        <div class="content">
+                            <div class="title">Billing</div>
+                            <div class="description">Enter billing information</div>
+                        </div>
+                    </div>
+                    <div class="disabled step">
+                        <i class="info icon"></i>
+                        <div class="content">
+                            <div class="title">Confirm Order</div>
+                            <div class="description">Verify order details</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui horizontal divider">huge size steps</div>
+                <div class="ui fluid huge steps">
+                    <div class="step">
+                        <i class="truck icon"></i>
+                        <div class="content">
+                            <div class="title">Shipping</div>
+                            <div class="description">Choose your shipping options</div>
+                        </div>
+                    </div>
+                    <div class="active step">
+                        <i class="payment icon"></i>
+                        <div class="content">
+                            <div class="title">Billing</div>
+                            <div class="description">Enter billing information</div>
+                        </div>
+                    </div>
+                    <div class="disabled step">
+                        <i class="info icon"></i>
+                        <div class="content">
+                            <div class="title">Confirm Order</div>
+                            <div class="description">Verify order details</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui horizontal divider">massive site steps</div>
+                <div class="ui fluid massive steps">
+                    <div class="active step">
+                        <i class="truck icon"></i>
+                        <div class="content">
+                            <div class="title">Shipping</div>
+                            <div class="description">Choose your shipping options</div>
+                        </div>
+                    </div>
+                    <div class="disable step">
+                        <i class="payment icon"></i>
+                        <div class="content">
+                            <div class="title">Billing</div>
+                            <div class="description">Enter billing information</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+        <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+    </body>
+</html>
