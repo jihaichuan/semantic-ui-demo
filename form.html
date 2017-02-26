@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>form 表单</title>
+        <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css" />
+        <link rel="stylesheet" href="css/form.css" />
+    </head>
+    <body>
+
+        <div class="ui container">
+            <h2 class="ui header dividing">一个表单</h2>
+            <form class="ui form">
+                <div class="field">
+                    <label for="">姓名</label>
+                    <input type="text" name="name" value="" placeholder="请输入真实姓名" />
+                </div>
+                <div class="field">
+                    <label for="">电话</label>
+                    <input type="text" name="mobile" value="" placeholder="请输入您的手机号码" />
+                </div>
+                <div class="field">
+                    <div class="ui checkbox">
+                        <input type="checkbox" tabindex="0" name="agree" id="agree" class="hidden">
+                        <label for="agree">同意并注册成会员, <a href="">《注册协议》</a></label>
+                    </div>
+                </div>
+                <button type="submit" class="ui primary button">提交</button>
+                <button type="reset" class="ui seconary button">重置</button>
+            </form>
+
+            <h2 class="ui header dividing">订单信息</h2>
+            <form action="" class="ui form">
+                <h4 class="ui header dividing">收货地址</h4>
+                <div class="field">
+                    <label for="">姓名</label>
+                    <div class="two fields">
+                        <div class="field">
+                            <input type="text" name="shipping[first-name]" placeholder="姓氏">
+                        </div>
+                        <div class="field">
+                            <input type="text" name="shipping[last-name]" placeholder="名字" />
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="">收货地址</label>
+                    <div class="fields">
+                        <div class="twelve wide field">
+                            <input type="text" name="shipping[address]" placeholder="市区/街道">
+                        </div>
+                        <div class="four wide field">
+                            <input type="text" name="shipping[address-2]" placeholder="几楼几单元几室">
+                        </div>
+                    </div>
+                </div>
+                <div class="two fields">
+                    <div class="field">
+                        <label for="">国家</label>
+                        <select name="" id="" class="ui fluid dropdown">
+                            <option value="">选择国家</option>
+                            <option value="china">中国</option>
+                            <option value="armenia">美国</option>
+                            <option value="britain">英国</option>
+                        </select>
+                    </div>
+                    <div class="field">
+                        <label for="">省份</label>
+                        <div class="ui fluid search selection dropdown">
+                            <input type="hidden" name="province">
+                            <i class="dropdown icon"></i>
+                            <div class="default text">选择省份</div>
+                            <div class="menu">
+                                <div class="item" data-value="beijing"><i class="cn flag"></i>北京市</div>
+                                <div class="item" data-value="shanghai"><i class="am flag"></i>上海市</div>
+                                <div class="item" data-value="guangzhou"><i class="br flag"></i>广州市</div>
+                                <div class="item" data-value="shenzhen"><i class="cn flag"></i>深圳市</div>
+                                <div class="item" data-value="chengdu"><i class="cn flag"></i>成都市</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="ui header dividing">银行卡信息</h4>
+                <div class="field">
+                    <label for="">银行卡类型</label>
+                    <div class="ui selection dropdown">
+                        <input type="text" name="card[type]">
+                        <i class="dropdown icon"></i>
+                        <div class="default text">选择类型</div>
+                        <div class="menu">
+                            <div class="item">
+                                <i class="visa icon"></i>
+                                储蓄卡
+                            </div>
+                            <div class="item">
+                                <i class="amex icon"></i>
+                                信用卡
+                            </div>
+                            <div class="item">
+                                <i class="discover icon"></i>
+                                工资卡
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="fields">
+                    <div class="seven wide field">
+                        <label for="">卡号</label>
+                        <input type="text" name="card[number]" maxlength="16" placeholder="请输入卡号">
+                    </div>
+                    <div class="three wide field">
+                        <label for="">CVC</label>
+                        <input type="text" name="card[cvc]" maxlength="3" placeholder="背面的CVC数字">
+                    </div>
+                    <div class="six wide field">
+                        <label for="">到期时间</label>
+                        <div class="two fields">
+                            <div class="field">
+                                <select name="card[expire-month]" id="" class="ui fluid search dropdown">
+                                    <option value="">到期月份</option>
+                                    <option value="1">January</option>
+                                    <option value="2">February</option>
+                                    <option value="3">March</option>
+                                    <option value="4">April</option>
+                                    <option value="5">May</option>
+                                    <option value="6">June</option>
+                                    <option value="7">July</option>
+                                    <option value="8">August</option>
+                                    <option value="9">September</option>
+                                    <option value="10">October</option>
+                                    <option value="11">November</option>
+                                    <option value="12">December</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <input type="text" name="card[expire-year]" maxlength="4" placeholder="请输入年份" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="ui header dividing">发送邮件</h4>
+                <div class="field">
+                    <label for="">接收人邮箱</label>
+                    <div class="ui fluid multiple search selection dropdown">
+                        <input type="hidden" name="emails">
+                        <i class="dropdown icon"></i>
+                        <div class="default text">选择收件人</div>
+                        <div class="menu">
+                            <div class="item" data-value="jenny" data-text="Jenny">
+                                <img src="http://semantic-ui.com/images/avatar/small/jenny.jpg" alt="" class="ui mini avatar image">
+                                Jenny Hess
+                            </div>
+                            <div class="item" data-value="elliot" data-text="Elliot">
+                                <img src="http://semantic-ui.com/images/avatar/small/elliot.jpg" alt="" class="ui mini avatar image">
+                                Elliot Fu
+                            </div>
+                            <div class="item" data-value="stevie" data-text="Stevie">
+                                <img src="http://semantic-ui.com/images/avatar/small/stevie.jpg" alt="" class="ui mini avatar image">
+                                Stevie Feliciano
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ui segment">
+                    <div class="field">
+                        <div class="ui toggle checkbox">
+                            <input type="checkbox" name="gift" id="" tabindex="0" class="hidden">
+                            <label for="">Do not include a receipt in the package</label>
+                        </div>
+                    </div>
+                </div>
+                <button class="ui fluid secondary button">提交订单</button>
+            </form>
+
+            <h2 class="ui header dividing">field 字段中的包含的内容</h2>
+            <form action="" class="ui form">
+                <div class="field">
+                    <label for="">姓名</label>
+                    <input type="text">
+                </div>
+            </form>
+
+            <h2 class="ui header dividing">fields 字段组</h2>
+            <form action="" class="ui form">
+                <div class="fields">
+                    <div class="field">
+                        <label for="">姓名</label>
+                        <input type="text" name="" value="" placeholder="请输入您的年龄">
+                    </div>
+                    <div class="field">
+                        <label for="">年龄</label>
+                        <input type="text" name="" value="" placeholder="请输入您的年龄">
+                    </div>
+                    <div class="field">
+                        <label for="">手机号码</label>
+                        <input type="text" placeholder="please input mobile">
+                    </div>
+                </div>
+            </form>
+
+            <h2 class="ui header dividing">等分为三份的fields</h2>
+            <form action="" class="ui form">
+                <div class="three fields">
+                    <div class="field">
+                        <label for="">姓名</label>
+                        <input type="text" name="" value="" placeholder="请输入您的年龄">
+                    </div>
+                    <div class="field">
+                        <label for="">年龄</label>
+                        <input type="text" name="" value="" placeholder="请输入您的年龄">
+                    </div>
+                    <div class="field">
+                        <label for="">手机号码</label>
+                        <input type="text" placeholder="please input mobile">
+                    </div>
+                </div>
+            </form>
+
+            <h2 class="ui header dividing">平方不同的宽度 wide</h2>
+            <div class="ui form">
+                <div class="inline fields">
+                    <div class="four wide field">
+                        <label for="">TEL</label>
+                        <input type="text" placeholder="请输入区号">
+                    </div>
+                    <div class="seven wide field">
+                        <input type="text" placeholder="请输入电话号码">
+                    </div>
+                    <div class="five wide field">
+                        <input type="text" placeholder="请输入分机号">
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="ui header dividing">textarea 文本框</h2>
+            <div class="ui form">
+                <div class="field">
+                    <label for="">描述</label>
+                    <textarea name="" id=""></textarea>
+                </div>
+                <div class="field">
+                    <label for="">备注</label>
+                    <textarea name="" id="" rows="2"></textarea>
+                </div>
+            </div>
+
+            <h2 class="ui header dividing">多选框 checkbox</h2>
+            <div class="ui form">
+                <div class="inline field">
+                    <div class="ui checkbox">
+                        <input type="checkbox" name="agree" id="" class="hidden">
+                        <label for="agree">Checkbox</label>
+                    </div>
+                </div>
+                <div class="inline field">
+                    <div class="ui slider checkbox">
+                        <input type="checkbox" name="like" id="" class="hidden">
+                        <label for="like">Slider</label>
+                    </div>
+                </div>
+                <div class="inline field">
+                    <div class="ui toggle checkbox">
+                        <input type="checkbox" name="ok" id="" class="hidden">
+                        <label for="ok">Toggle</label>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="ui header dividing">单选 radio</h2>
+            <div class="ui form">
+                <div class="inline fields">
+                    <label for="fruit">选择你喜欢的水果</label>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="fruit" checked="" tabindex="0" class="hidden" />
+                            <label for="">苹果</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="fruit" id="" class="hidden">
+                            <label for="">橘子</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="fruit" id="" class="hidden">
+                            <lable>香梨</lable>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="" id="" class="hidden">
+                            <label for="">西柚</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="grouped fields">
+                    <label for="food">选择你喜欢的食物</label>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="food" id="" class="hidden">
+                            <label for="">米饭</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="food" id="" class="hidden">
+                            <label for="">馒头</label>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="ui radio checkbox">
+                            <input type="radio" name="food" id="" class="hidden">
+                            <label for="">面条</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="ui header dividing">下拉选择 selection dropdown</h2>
+            <div class="ui form">
+                <div class="field">
+                    <label for="gender">性别</label>
+                    <div class="ui selection dropdown">
+                        <input type="hidden" name="gender">
+                        <i class="dropdown icon"></i>
+                        <div class="default text">选择性别</div>
+                        <div class="menu">
+                            <div class="item" data-value="male">男性</div>
+                            <div class="item" data-value="Female">女性</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="">国家</label>
+                    <select name="" id="" class="ui search dropdown">
+                        <option value="">选择国家</option>
+                        <option value="cn">中国</option>
+                        <option value="us">美国</option>
+                        <option value="uk">英国</option>
+                    </select>
+                </div>
+
+                <div class="ui horizontal divider">多选 multiple select</div>
+                <div class="field">
+                    <label for="">运动</label>
+                    <select name="sports" id="" class="ui search dropdown" multiple="">
+                        <option value="">选择喜欢的运动</option>
+                        <option value="1">跑步</option>
+                        <option value="2">打篮球</option>
+                        <option value="3">踢足球</option>
+                        <option value="4">羽毛球</option>
+                        <option value="5">拳击</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <h2 class="ui header dividding">form表单中的message 消息</h2>
+            <div class="ui form">
+                <div class="ui message">
+                    <div class="header">友情提示：</div>
+                    <ui class="list">
+                        <li>请在下面的输入框中填写您的联系信息</li>
+                        <li>请保证填写的信息是真实的</li>
+                    </ui>
+                </div>
+
+                <div class="ui info message">
+                    <div class="header">友情提示：</div>
+                    <ui class="list">
+                        <li>请在下面的输入框中填写您的联系信息</li>
+                        <li>请保证填写的信息是真实的</li>
+                    </ui>
+                </div>
+            </div>
+
+
+            <h2 class="ui header dividing">form表单的状态</h2>
+            <div class="ui segment">
+                <div class="ui horizontal divider">loading 加载的状态</div>
+                <div class="ui loading form">
+                    <div class="field">
+                        <label for="email">电子邮箱</label>
+                        <input type="text" name="email" placeholder="请输入你的电子邮箱" />
+                    </div>
+                    <button type="submit" class="ui submit button">提交</button>
+                </div>
+
+                <div class="ui horizontal divider">success 成功的状态</div>
+                <div class="ui form success">
+                    <div class="field">
+                        <label for="">电子邮箱</label>
+                        <input type="text" name="email" placeholder="请输入你的电子邮箱" />
+                    </div>
+                    <div class="ui success message">
+                        <div class="header">登录成功</div>
+                        <p>登录积分+1</p>
+                    </div>
+                    <button type="submit" class="ui submit button">提交</button>
+                </div>
+
+                <div class="ui horizontal divider">error 错误的状态</div>
+                <div class="ui form error">
+                    <div class="error field">
+                        <label for="">电子邮箱</label>
+                        <input type="text" name="email" placeholder="请输入你的电子邮箱" />
+                    </div>
+                    <div class="ui error message">
+                        <div class="header">错误提示</div>
+                        <p>电子邮箱地址不能为空！</p>
+                    </div>
+                    <button type="submit" class="ui submit button">提交</button>
+                </div>
+
+                <div class="ui horizontal divider">warning 警告的状态</div>
+                <div class="ui form warning">
+                    <div class="field">
+                        <label for="">电子邮箱</label>
+                        <input type="text" name="email" placeholder="请输入你的电子邮箱" />
+                    </div>
+                    <div class="ui warning message">
+                        <div class="header">警告</div>
+                        <p>您的邮箱地址已被注册，请更换邮箱地址或者<a href="">直接登录</a></p>
+                    </div>
+                    <button type="submit" class="ui submit button">提交</button>
+                </div>
+
+                <div class="ui horizontal divider">field 字段错误</div>
+                <div class="ui form">
+                    <div class="two fields">
+                        <div class="error field">
+                            <label for="">姓氏</label>
+                            <input type="text" placeholder="姓">
+                        </div>
+                        <div class="field">
+                            <label for="">名字</label>
+                            <input type="text" placeholder="名">
+                        </div>
+                    </div>
+                    <div class="error field">
+                        <label for="gender">性别</label>
+                        <select name="gender" id="" class="ui search dropdown">
+                            <option value="">选择性别</option>
+                            <option value="1">先生</option>
+                            <option value="2">女士</option>
+                        </select>
+                    </div>
+                    <div class="ui error field">
+                        <div class="ui checkbox">
+                            <input type="checkbox" name="agree" id="" tabindex="0" class="hidden">
+                            <label for="agree">同意协议</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui horizontal divider">disabled 禁用的状态</div>
+                <div class="ui form">
+                    <div class="two fields">
+                        <div class="disabled field">
+                            <label for="">姓氏</label>
+                            <input type="text" placeholder="姓">
+                        </div>
+                        <div class="disabled field">
+                            <label for="">名字</label>
+                            <input type="text" placeholder="名">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui horizontal divider">read-only 只读的状态</div>
+                <div class="ui form">
+                    <div class="two fields">
+                        <div class="field">
+                            <label for="">姓氏</label>
+                            <input type="text" readonly="" placeholder="姓" value="纪">
+                        </div>
+                        <div class="field">
+                            <label for="">名字</label>
+                            <input type="text" readonly="" placeholder="名" value="不住">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <h2 class="ui header dividing">不同大小的表单 form size </h2>
+            <div class="ui segment">
+                <div class="ui horizontal divider">mini size for form</div>
+                <div class="ui mini form">
+                    <div class="two fields">
+                        <div class="field">
+                            <label for="">姓氏</label>
+                            <input type="text" placeholder="姓" value="">
+                        </div>
+                        <div class="field">
+                            <label for="">名字</label>
+                            <input type="text" placeholder="名" value="">
+                        </div>
+                    </div>
+                    <button type="submit" class="ui submit button">提交</button>
+                </div>
+
+                <div class="ui horizontal divider">tiny size for form</div>
+                <div class="ui tiny form">
+                    <div class="two fields">
+                        <div class="field">
+                            <label for="">姓氏</label>
+                            <input type="text" placeholder="姓" value="">
+                        </div>
+                        <div class="field">
+                            <label for="">名字</label>
+                            <input type="text" placeholder="名" value="">
+                        </div>
+                    </div>
+                    <button type="submit" class="ui submit button">提交</button>
+                </div>
+
+                <div class="ui horizontal divider">small size for form</div>
+                <div class="ui small form">
+                    <div class="two fields">
+                        <div class="field">
+                            <label for="">姓氏</label>
+                            <input type="text" placeholder="姓" value="">
+                        </div>
+                        <div class="field">
+                            <label for="">名字</label>
+                            <input type="text" placeholder="名" value="">
+                        </div>
+                    </div>
+                    <button type="submit" class="ui submit button">提交</button>
+                </div>
+
+
+                <div class="ui horizontal divider">large size for form</div>
+                <div class="ui large form">
+                    <div class="two fields">
+                        <div class="field">
+                            <label for="">姓氏</label>
+                            <input type="text" placeholder="姓" value="">
+                        </div>
+                        <div class="field">
+                            <label for="">名字</label>
+                            <input type="text" placeholder="名" value="">
+                        </div>
+                    </div>
+                    <button type="submit" class="ui submit button">提交</button>
+                </div>
+
+                <div class="ui horizontal divider">big size for form</div>
+                <div class="ui big form">
+                    <div class="two fields">
+                        <div class="field">
+                            <label for="">姓氏</label>
+                            <input type="text" placeholder="姓" value="">
+                        </div>
+                        <div class="field">
+                            <label for="">名字</label>
+                            <input type="text" placeholder="名" value="">
+                        </div>
+                    </div>
+                    <button type="submit" class="ui submit button">提交</button>
+                </div>
+
+                <div class="ui horizontal divider">huge size for form</div>
+                <div class="ui huge form">
+                    <div class="two fields">
+                        <div class="field">
+                            <label for="">姓氏</label>
+                            <input type="text" placeholder="姓" value="">
+                        </div>
+                        <div class="field">
+                            <label for="">名字</label>
+                            <input type="text" placeholder="名" value="">
+                        </div>
+                    </div>
+                    <button type="submit" class="ui submit button">提交</button>
+                </div>
+
+                <div class="ui horizontal divider">massive size for form</div>
+                <div class="ui massive form">
+                    <div class="two fields">
+                        <div class="field">
+                            <label for="">姓氏</label>
+                            <input type="text" placeholder="姓" value="">
+                        </div>
+                        <div class="field">
+                            <label for="">名字</label>
+                            <input type="text" placeholder="名" value="">
+                        </div>
+                    </div>
+                    <button type="submit" class="ui submit button">提交</button>
+                </div>
+
+                <div class="ui horizontal divider">equal width等宽的大小</div>
+                <div class="ui equal width form">
+                    <div class="fields">
+                        <div class="field">
+                            <label for="">姓氏</label>
+                            <input type="text" placeholder="姓" value="">
+                        </div>
+                        <div class="field">
+                            <label for="">名字</label>
+                            <input type="text" placeholder="名" value="">
+                        </div>
+                    </div>
+                    <div class="fields">
+                        <div class="field">
+                            <label for="">手机号</label>
+                            <input type="text" placeholder="18012341234">
+                        </div>
+                        <div class="field">
+                            <label for="">微信号</label>
+                            <input type="text" placeholder="hangenggeng_520">
+                        </div>
+                        <div class="field">
+                            <label for="">邮箱</label>
+                            <input type="text" placeholder="jihaichuan@126.com">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui horzontal divider">inverted 反向的背景样式 </div>
+                <div class="ui inverted segment">
+                    <div class="ui inverted form">
+                        <div class="two fields">
+                            <div class="field">
+                                <label for="">姓氏</label>
+                                <input type="text" placeholder="姓" value="">
+                            </div>
+                            <div class="field">
+                                <label for="">名字</label>
+                                <input type="text" placeholder="名" value="">
+                            </div>
+                        </div>
+                        <div class="ui field">
+                            <div class="ui checkbox">
+                                <input type="checkbox" name="" id="" class="hidden">
+                                <label for="">同意注册协议</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="ui submit small button">提交</button>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="ui header dividing">字段的变化</h2>
+            <div class="ui segment">
+                <div class="ui horizontal divider">inline 内联效果</div>
+                <div class="ui form">
+                    <div class="inline field">
+                        <label for="">姓名</label>
+                        <input type="text" placeholder="纪">
+                    </div>
+                </div>
+
+                <div class="ui horizontal divider">wide 不同宽度的field</div>
+                <div class="ui form">
+                    <div class="fields">
+                        <div class="six wide field">
+                            <label for="">姓名</label>
+                            <input type="text" placeholder="真实姓名">
+                        </div>
+                        <div class="ui four wide field">
+                            <label for="">手机号码</label>
+                            <input type="text" placeholder="18612341234">
+                        </div>
+                        <div class="ui six wide field">
+                            <label for="">电子邮箱</label>
+                            <input type="text" placeholder="jihaichuan@126.com">
+                        </div>
+                    </div>
+                    <div class="fields">
+                        <div class="two field">
+                            <input type="text" placeholder="+86">
+                        </div>
+                        <div class="twelve wide field">
+                            <input type="text" placeholder="18612341234">
+                        </div>
+                        <div class="two wide field">
+                            <input type="text" placeholder="?">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui horizontal divider">required 必填</div>
+                <div class="ui form">
+                    <div class="required field">
+                        <label for="">姓名</label>
+                        <input type="text">
+                    </div>
+                    <div class="required field">
+                        <div class="ui checkbox">
+                            <input type="checkbox" name="" id="" class="hidden">
+                            <label for="">I agree to the terms and conditions</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="ui header dividing">表单组</h2>
+            <div class="ui segment">
+                <div class="ui horizontal divider">平均分</div>
+                <div class="ui form">
+                    <div class="three fields">
+                        <div class="field">
+                            <label for="">姓名</label>
+                            <input type="text">
+                        </div>
+                        <div class="field">
+                            <label for="">电话</label>
+                            <input type="text">
+                        </div>
+                        <div class="field">
+                            <label for="">手机</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui horizontal divider">单选组</div>
+                <div class="ui form">
+                    <div class="grouped fields">
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="fruit" tabindex="0" id="" class="hidden">
+                                <label>苹果</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="fruit" tabindex="0" id="" class="hidden">
+                                <label>香蕉</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="fruit" tabindex="0" id="" class="hidden">
+                                <label>葡萄</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="fruit" tabindex="0" id="" class="hidden">
+                                <label>橘子</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" name="fruit" tabindex="0" id="" class="hidden">
+                                <label>大枣</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui horizontal divider">等宽</div>
+                <div class="ui form">
+                    <div class="fields">
+                        <div class="field">
+                            <label for="">姓名</label>
+                            <input type="text" placeholder="真实姓名">
+                        </div>
+                        <div class="field">
+                            <label for="">手机号码</label>
+                            <input type="text" placeholder="18612341234">
+                        </div>
+                    </div>
+                    <div class="equal width fields">
+                        <div class="field">
+                            <label for="">姓名</label>
+                            <input type="text" placeholder="真实姓名">
+                        </div>
+                        <div class="field">
+                            <label for="">手机号码</label>
+                            <input type="text" placeholder="18612341234">
+                        </div>
+                        <div class="field">
+                            <label for="">电子邮箱</label>
+                            <input type="text" placeholder="jihaichuan@126.com">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui horizontal divider">inline 内联</div>
+                <div class="ui form">
+                    <div class="inline fields">
+                        <label for="">电话号码</label>
+                        <div class="field">
+                            <input type="text" placeholder="区号">
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="电话">
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="分号">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ui horizontal divider">单选</div>
+                <div class="ui form">
+                    <div class="inline fields">
+                        <label for="">选择你喜欢的水果</label>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" tabindex="0" name="fruit" id="" class="hidden">
+                                <label>苹果</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" tabindex="0" name="fruit" id="" class="hidden">
+                                <label>橘子</label>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <div class="ui radio checkbox">
+                                <input type="radio" tabindex="0" name="fruit" id="" class="hidden">
+                                <label>香蕉</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+        <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="semantic/dist/semantic.min.js"></script>
+        <script type="text/javascript" src="js/form.js"></script>
+    </body>
+</html>
